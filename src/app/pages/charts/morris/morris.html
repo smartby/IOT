@@ -1,0 +1,85 @@
+<section ng-controller="morrisCtrl">
+  <div class="row">
+    <div class="col-md-6">
+      <div ba-panel ba-panel-title="空气温度(摄氏度)" ba-panel-class="with-scroll">
+        <div
+            line-chart
+            line-data='lineData1'
+            line-xkey='y'
+            line-ykeys='["a"]'
+            line-labels='["空气温度"]'
+            line-colors='colors'>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-6">
+      <div ba-panel ba-panel-title="空气湿度(%RH)" ba-panel-class="with-scroll">
+        <div
+                area-chart
+                area-data='areaData2'
+                area-xkey='y'
+                area-ykeys='[ "b"]' %
+                area-labels='[ "空气湿度"]'
+                line-colors='colors'>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <div ba-panel ba-panel-title="太阳辐射 降雨量 日照时数" ba-panel-class="with-scroll">
+        <div
+            donut-chart
+            donut-data='donutData'
+            donut-colors='colors'>
+
+            <!--donut-formatter='"currency"'>-->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8">
+      <div ba-panel ba-panel-title="风速(m/s)" ba-panel-class="with-scroll ">
+        <div
+            bar-chart
+            bar-data='barData'
+            bar-x='y'
+            bar-y='["a"]'
+            bar-labels='["风速"]'
+            bar-colors='colors'>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-6">
+      <div ba-panel ba-panel-title="光照强度(Lux)" ba-panel-class="with-scroll">
+        <div
+            area-chart
+            area-data='areaData1'
+            area-xkey='y'
+            area-ykeys='["a"]' %
+            area-labels='["光照强度"]'
+            line-colors='colors'>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+      <div ba-panel ba-panel-title="二氧化碳浓度(ppm)" ba-panel-class="with-scroll">
+      <div
+              line-chart
+              line-data='lineData2'
+              line-xkey='y'
+              line-ykeys='[ "b"]'
+              line-labels='[ "二氧化碳浓度"]'
+              line-colors='colors'>
+      </div>
+    </div>
+
+    </div>
+  </div>
+</section>

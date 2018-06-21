@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="cn" ng-app="app1">
+<head>
+    <meta charset="utf-8">
+    <title>MQTT Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-mqtt/src/browserMqtt.js"></script>
+    <script src="bower_components/angular-mqtt/src/angular-MQTT.js"></script>
+    <script src="client.js"></script>
+
+    <script src="http://127.0.0.1:7410/mqtt.js"></script>
+</head>
+<body ng-controller="indexCtrl1">
+
+    名: <input type="text" ng-model="firstName"><br>
+    姓: <input type="text" ng-model="lastName"><br>
+    <br>
+    姓名: {{firstName + " " + lastName}}
+
+</body>
+</html>
